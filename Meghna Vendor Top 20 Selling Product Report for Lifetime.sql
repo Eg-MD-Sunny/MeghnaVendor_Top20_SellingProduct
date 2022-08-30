@@ -22,7 +22,6 @@ and pv.id in (
 	from ProductVariant pv 
 	join ProductVariantVendorMapping pvcm on pv.Id = pvcm.ProductVariantId 
 	join vendor v on v.Id = pvcm.VendorId 
-
 	where v.Id = 10
 
 )
